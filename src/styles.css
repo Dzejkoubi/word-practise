@@ -4,12 +4,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 1rem;
 }
 /* CSS Variables */
 :root {
-  --primary-color: #010101;
-  --secondary-color: #fff;
-  --tethritary-color: #2b1e04;
-  --fifth-color: #365221;
-  --background-color: #ffe156;
+  --primary-color: #ffffff;
+  --secondary-color: #c8102e;
+  --background-color: #012169;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+h1 {
+  text-decoration: var(--secondary-color);
 }
