@@ -1,0 +1,15 @@
+/* Basic Styles */
+body {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+/* CSS Variables */
+:root {
+  --primary-color: #010101;
+  --secondary-color: #fff;
+  --tethritary-color: #2b1e04;
+  --fifth-color: #365221;
+  --background-color: #ffe156;
+}

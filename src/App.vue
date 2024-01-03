@@ -1,12 +1,18 @@
 <template>
-  <Start />
+  <div class="content">
+    <RouterView />
+  </div>
 </template>
 
 <script>
 import Game from "./components/Game.vue";
 import Start from "./components/Start.vue";
-
+import "./styles.css";
 export default {
+  components: {
+    Game,
+    Start,
+  },
   data() {
     return {};
   },
@@ -15,4 +21,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.content {
+}
+</style>
