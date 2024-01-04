@@ -1,12 +1,12 @@
 <template>
   <div>
-    <button>{{ text }}</button>
+    <button><slot></slot></button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["text"],
+  props: [],
   setup() {
     return {};
   },
@@ -14,6 +14,13 @@ export default {
 </script>
 
 <style scoped>
+.button-slot {
+}
+
+.button-slot svg {
+  color: black;
+}
+
 button {
   background-color: var(--primary-color);
   color: var(--secondary-color);

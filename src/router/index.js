@@ -11,32 +11,32 @@ const router = createRouter({
       path: "/",
       component: Start,
       meta: {
-        enterClass: "animate__animated animate__backInDown",
-        leaveClass: "animate__animated animate__bounceOut",
+        enterClass: "animate__animated animate__fadeInUp",
+        leaveClass: "animate__animated animate__fadeOut",
       },
     },
     {
       path: "/Game",
       component: Game,
       meta: {
-        enterClass: "animate__animated animate__backInDown",
-        leaveClass: "animate__animated animate__bounceOut",
+        enterClass: "animate__animated animate__bounceIn",
+        leaveClass: "animate__animated animate__fadeOut",
       },
     },
     {
       path: "/YourWords",
       component: YourWords,
       meta: {
-        enterClass: "animate__animated animate__backInDown",
-        leaveClass: "animate__animated animate__bounceOut",
+        enterClass: "animate__animated animate__fadeInUp",
+        leaveClass: "animate__animated animate__fadeOut",
       },
     },
     {
       path: "/AboutAuthor",
       component: AboutAuthor,
       meta: {
-        enterClass: "animate__animated animate__backInDown",
-        leaveClass: "animate__animated animate__bounceOut",
+        enterClass: "animate__animated animate__fadeInUp",
+        leaveClass: "animate__animated animate__fadeOut",
       },
     },
   ],

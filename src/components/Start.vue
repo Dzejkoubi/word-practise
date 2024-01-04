@@ -1,8 +1,15 @@
 <template>
   <div class="page">
-    <h1>Word <span>Translation</span> Game <span>!</span></h1>
-    <p>Click the button below to start playing.</p>
-    <RouterLink to="/game" text="PLAY"><PropButton></PropButton></RouterLink>
+    <h1>Word <span>Translation</span> Game</h1>
+    <p>
+      Welcome to the Word Translation Game! The goal of this game is to
+      translate words from one language to another. You will be given a word in
+      one language and you need to type the translation in the other language.
+      Good luck!
+    </p>
+    <RouterLink to="/game">
+      <PropButton> <font-awesome-icon icon="fa-solid fa-play" /></PropButton>
+    </RouterLink>
   </div>
 </template>
 

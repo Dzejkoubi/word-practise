@@ -1,11 +1,6 @@
 <template>
-  <div class="content">
-    <div class="navbar">
-      <router-link to="/">Start</router-link>
-      <router-link to="/game">Game</router-link>
-      <router-link to="/YourWords">Your Words</router-link>
-      <router-link to="/AboutAuthor">About author</router-link>
-    </div>
+  <div>
+    <Navbar />
     <router-view v-slot="{ Component, route }">
       <transition
         :enter-active-class="route.meta.enterClass"
@@ -18,9 +13,14 @@
 </template>
 
 <script>
+import Navbar from "./components/Navbar.vue";
 import "./styles.css";
+import "animate.css";
 
 export default {
+  components: {
+    Navbar,
+  },
   data() {
     return {};
   },
@@ -30,32 +30,27 @@ export default {
 </script>
 
 <style>
-.content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .page {
   position: absolute;
-  top: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
-a {
-  font-weight: bold;
-  color: var(--primary-color);
-  text-decoration: none;
-  margin-right: 1em;
-}
-
-a:hover,
-a.router-link-active {
-  color: var(--secondary-color);
+.page.animate__fadeOutDown {
+  animation-duration: 2s; /* Increase duration to 2 seconds */
 }
 </style>
