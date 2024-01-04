@@ -1,6 +1,5 @@
 <template>
   <div class="page">
-    <h1>Word Translation Game</h1>
     <p>Translate this word: {{ currentWord }}</p>
     <p v-if="currentHint">Hint: {{ currentHint }}</p>
     <input v-model="userInput" placeholder="Enter translation here" />

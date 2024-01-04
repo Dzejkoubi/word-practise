@@ -1,5 +1,15 @@
 <template>
   <div>
+    <h1 v-if="$route.path === '/'">Word <span>Translation</span> Game</h1>
+    <h1 v-else-if="$route.path === '/game'">
+      Translate the <span>Words</span>
+    </h1>
+    <h1 v-else-if="$route.path === '/YourWords'">
+      Add your <span>custom Words</span>
+    </h1>
+    <h1 v-else-if="$route.path === '/AboutAuthor'">
+      About the <span>author</span>
+    </h1>
     <Navbar />
     <router-view v-slot="{ Component, route }">
       <transition
@@ -30,6 +40,17 @@ export default {
 </script>
 
 <style>
+h1 {
+  padding-top: 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  z-index: 1;
+}
+
 .page {
   position: absolute;
   top: 0;

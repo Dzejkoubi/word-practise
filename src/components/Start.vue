@@ -1,14 +1,11 @@
 <template>
   <div class="page">
-    <h1>Word <span>Translation</span> Game</h1>
     <p>
       Welcome to the Word Translation Game! The goal of this game is to
-      translate words from one language to another. You will be given a word in
-      one language and you need to type the translation in the other language.
-      Good luck!
+      translate words from Czech into English and vice versa.
     </p>
-    <RouterLink to="/game">
-      <PropButton> <font-awesome-icon icon="fa-solid fa-play" /></PropButton>
+    <RouterLink to="/game" class="play-button">
+      <PropButton> <font-awesome-icon icon="fa-regular fa-play" /></PropButton>
     </RouterLink>
   </div>
 </template>
@@ -27,4 +24,19 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.play-button {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+</style>
